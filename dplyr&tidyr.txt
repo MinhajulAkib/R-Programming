@@ -1,0 +1,39 @@
+#syntax
+dplyr::tbl_df(iris)
+-converts dat to table class.
+
+dplyr::glimpse(iris)
+information density summary of table data
+utils::view(iris)
+view data is spresdsheet-like display(note capital V)
+
+
+###reshaping data
+
+tidyr::gather(cases,"year","n",2:4)
+gather coloumns into rows
+
+tidyr:::spread(pollution,size,amount)
+spread rows into coloumns
+
+tidyr::separate(storms,date,c("y","m","d"))
+separate one coloumns into several
+
+tidyr::unite(data,col,sep)
+unite several coloumns into one
+
+dplyr::data_frame(a=1:3,b=4:6)
+combine vector into data frame(optimized)
+
+dplyr::arrange(mtcars,mpg)
+order rows by values of a coloumn(low to high)
+
+dplyr::arrange(mtcars,desc(mpg))
+order rows by values of a coloumn( high to low)
+
+dplyr::rename(tb,y=year)
+rename the coloumn of a data frame
+
+
+####select observation
+
